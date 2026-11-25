@@ -6,12 +6,14 @@
 #include <iterator>
 #include <utility>
 #include <vector>
-
+#include <windows.h>
 #include "student.h"
 
 using namespace std;
 
 int main() {
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
     ifstream in("input.txt");
     ofstream out("output.txt");
 
