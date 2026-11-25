@@ -238,12 +238,14 @@ size_t StudentHash::operator()(const Student& s) const {
 #include <iterator>
 #include <utility>
 #include <vector>
-
+#include <windows.h>
 #include "student.h"
 
 using namespace std;
 
 int main() {
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
     // Открываем файлы для чтения и записи
     ifstream in("input.txt");
     ofstream out("output.txt");
